@@ -2,7 +2,7 @@
 
 A simple application "emulating" Twitter, where people can leave tweeds.
 
-### Live: https://tweedrapp-react.herokuapp.com/
+### Live: https://tweedr-client.herokuapp.com/
 ### API: https://tweedrapp.herokuapp.com/
 
 ### TECH STACK

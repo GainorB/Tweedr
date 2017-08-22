@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+}
+
+body{
+    background-color:#c0deed;
+}
+/*Header Component*/
+
+.TweedrTitle {
+    color:#1dcaff;
+    text-shadow: 1px 2px rgba(0,0,0,.5);
+}
+
+.TweedrTitle h2{
+    font-size: 100px;
+    font-style: italic;
+    user-select: none;
+    cursor: default;
+}
+.subtitle{
+    font-size:20px;
+    text-shadow: 0px 0px 0px rgba(0,0,0,.5);
+}
+/*Input Component*/
+.inputDiv{
+    border-radius:5px;
+    padding: 5px;
+    width: 500px;
+    background-color: #00aced;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.5);
+    transition: .3s;
+}
+.inputDiv:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.5);
+    transition: .3s;
+}
+.input{
+    width: 400px;
+    border: 0;
+    padding-left: 5px;
+}
+.button{
+    margin-left: 5px;
+    height: 23px;
+    border: 0;
+    padding: 0;
+    width: 70px;
+}
+
+/*TweedrFeed Component*/
+.TweedrFeed h1 {
+    user-select: none;
+    font-size: 25px;
+    background-color: #1dcaff;
+    padding: 15px 0 15px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    text-shadow:0px 1px rgba(0,0,0,.3);
+    font-style: italic;
+}
+.TweedrFeed{
+    width: 500px;
+    height: 300px;
+    overflow: auto;
+    margin: 0 auto;
+    margin-top: 25px;
+    background-color: #00aced;
+    margin-bottom: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.5);
+    transition: .3s;
+}
+
+.Tweeds{
+    width: 100%;  
+    min-height: 50px;
+    padding: 15px 10px 15px 10px;
+    background-color: #00aced;
+    border-bottom: solid #1dcaff 1px;
+    transition:.3s;
+    margin-bottom:0; 
+    color:white; 
+    text-shadow:0px 1px rgba(0,0,0,.3); 
+    font-size: 18px
+}
+
+.Tweeds:hover{
+    transition: .3s;
+    background-color: #1dcaff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, .5);
+    border-bottom: none;
+    color: black;
+    margin-bottom: 10px;
+    text-shadow:0px 0px rgba(0,0,0,.3); 
+
+    
+}
+/*MEDIA QUERY*/
+@media only screen and (max-width:550px){
+		.TweedrTitle h2{
+		   font-size: 50px;
+		}
+		.inputDiv{
+	    	padding: 5px;
+	    	width: 350px;
+	
+		}
+		.input{
+			margin-top:15px;
+	    	width: 300px;
+	    
+		}
+		.button{
+			margin:15px 0 10px 0;
+	    	
+		}
+		.TweedrFeed{
+		    width: 350px;
+		    height: 300px;
+		    border-radius:5px; 
+		}
+		.Tweeds{
+		    width: 100%;  
+		    min-height: 40px;
+		   	/*margin: 10px auto;*/
+		   	padding: 10px 5px 10px 5px;	
+		}
+	}

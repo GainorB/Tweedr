@@ -8,7 +8,7 @@ var db = pgp(connectionString);
 
 function getTweeds(req, res, next){
     db.any("SELECT * FROM posts ORDER BY id DESC")
-    .then((data) => { res.status(200).json({ tweeds:data }); })
+    .then((data) => { res.status(200).json({ tweeds: data }); })
     .catch((err) => { return next(err); });
 }
 
@@ -29,8 +29,8 @@ function createTweed(req, res, next){
 }
 
 function deleteTweed(req, res, next) {
-    db.one('DELETE FROM posts WHERE id = $1', req.params.id)
-        .then(response => res.json({ status: true, msg: `Tweed ${req.params.id} deleted`, response }))
+    db.any('DELETE FROM posts WHERE id = $1', req.params.id)
+        .then(() => res.json({ status: true, msg: `Tweed ${req.params.id} deleted` }))
         .catch((err) => { return next(err); });
 }
 

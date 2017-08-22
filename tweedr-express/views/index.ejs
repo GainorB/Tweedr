@@ -7,16 +7,16 @@
   </head>
   <body>
     <h1><%= title %> API Documentation</h1>
-    <span class="subLinks">[ github: <a href="https://git.generalassemb.ly/GainorB/Tweedr">https://git.generalassemb.ly/GainorB/Tweedr</a> | live: <a href="https://tweedrapp-react.herokuapp.com/">https://tweedrapp-react.herokuapp.com/</a> ]</span><br>
+    <span class="subLinks">[ github: <a href="https://github.com/GainorB/Tweedr">https://github.com/GainorB/Tweedr</a> | live: <a href="https://tweedrapp-react.herokuapp.com/">https://tweedrapp-react.herokuapp.com/</a> ]</span><br>
     No authentication is required to access this API. All resources are fully open and available.
     <ul>
     <li>There is, however, a daily rate limit of 100 requests per resource per IP address. This is to stop our database from falling over under heavy load.</li>
     <li>By using, our API you agree to our Terms of Service.</li>
     </ul>
     <h3>GET ALL TWEEDS</h3>
-    <div class="getDiv"><span class="larger"><span class="get">GET</span> https://tweedrapp.herokuapp.com/<span class="get">getTweeds</span></span></div>
+    <div class="getDiv"><span class="larger"><span class="get">GET</span> https://tweedrapp.herokuapp.com/<span class="get">tweeds/get</span></span></div>
     <h3>HOW TO CREATE A TWEED</h3>
-    <div class="createDiv"><span class="larger"><span class="create">POST</span> https://tweedrapp.herokuapp.com/<span class="create">createTweed</span></span></div>
+    <div class="createDiv"><span class="larger"><span class="create">POST</span> https://tweedrapp.herokuapp.com/<span class="create">tweeds/create</span></span></div>
     <h5>JSON FORMAT</h5>
     <div class="createDiv"><small>{ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"post" : "content goes here"<br> }</small></div>
     <h5>SUCCESS RESPONSE</h5>

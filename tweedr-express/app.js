@@ -23,6 +23,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(cors());
+app.get('/', (req, res, next) => { res.redirect('/tweeds') });
 app.use('/tweeds', require('./routes/index'));
 
 // catch 404 and forward to error handler

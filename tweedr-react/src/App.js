@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+
+// components
 import Header from './components/Header';
 import Input from './components/Input';
 import TweedrFeed from './components/TweedrFeed';
 
-import axios from 'axios';
+// css
 import './App.css';
 
 export default class App extends Component {

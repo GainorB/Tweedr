@@ -30,7 +30,7 @@ function createTweed(req, res, next){
 
 function deleteTweed(req, res, next) {
     db.one('DELETE FROM posts WHERE id = $1', req.params.id)
-        .then(response => res.json({response}))
+        .then(response => res.json({ status: true, msg: `Tweed ${req.params.id} deleted`, response }))
         .catch((err) => { return next(err); });
 }
 
